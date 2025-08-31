@@ -1,0 +1,14 @@
+FILE: E:\My_Project\pdf-extractor-php\pdf-extractor-php\bin/../data/pdfs/notes_1.pdf
+  Page 1
+    Project Notes - Part 1
+    - Task A: Setup project structure
+    - Task B: Implement extractor interface
+    Some extra description in PDF 1...
+
+FILE: E:\My_Project\pdf-extractor-php\pdf-extractor-php\bin/../data/pdfs/notes_2.pdf
+  Page 1
+    Project Notes - Part 2
+    - Task C: Integrate SmalotPdfExtractor
+    - Task D: Integrate TcpdfExtractor
+    End of notes in PDF 2.
+

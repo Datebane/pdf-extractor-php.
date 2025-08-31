@@ -1,0 +1,46 @@
+[
+    {
+        "filePath": "E:\\My_Project\\pdf-extractor-php\\pdf-extractor-php\\bin\/..\/data\/pdfs\/notes_1.pdf",
+        "pages": [
+            {
+                "number": 1,
+                "blocks": [
+                    {
+                        "text": "Project Notes - Part 1"
+                    },
+                    {
+                        "text": "- Task A: Setup project structure"
+                    },
+                    {
+                        "text": "- Task B: Implement extractor interface"
+                    },
+                    {
+                        "text": "Some extra description in PDF 1..."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "filePath": "E:\\My_Project\\pdf-extractor-php\\pdf-extractor-php\\bin\/..\/data\/pdfs\/notes_2.pdf",
+        "pages": [
+            {
+                "number": 1,
+                "blocks": [
+                    {
+                        "text": "Project Notes - Part 2"
+                    },
+                    {
+                        "text": "- Task C: Integrate SmalotPdfExtractor"
+                    },
+                    {
+                        "text": "- Task D: Integrate TcpdfExtractor"
+                    },
+                    {
+                        "text": "End of notes in PDF 2."
+                    }
+                ]
+            }
+        ]
+    }
+]

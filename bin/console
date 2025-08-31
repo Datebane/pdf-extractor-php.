@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use PdfExtractor\Application\UseCase\ExtractPdfs;
+use PdfExtractor\Domain\Service\Aggregator;
+use PdfExtractor\Infrastructure\Extractor\SmalotPdfExtractor;
+use PdfExtractor\Infrastructure\FS\LocalStorage;
+use PdfExtractor\Presentation\Console\ConvertCommand;
+use Symfony\Component\Console\Application;
+
+$extractor = new SmalotPdfExtractor();
+$aggregator = new Aggregator();
+$storage = new LocalStorage();
+
+$useCase = new ExtractPdfs($extractor, $aggregator, $storage);
+
+$inputDir = __DIR__ . '/../data/pdfs';
+$outputDir = __DIR__ . '/../data/outputs/smalot';
+
+$app = new Application('PDF Extractor CLI');
+$app->add(new ConvertCommand($useCase, $inputDir, $outputDir));
+$app->run();

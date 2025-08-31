@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-phpcs
+    rev: v3.7.2
+    hooks:
+      - id: php-cs
+        name: PHP CodeSniffer
+        entry: phpcs
+        args: ['--standard=phpcs.xml']
+        language: system
+
+  - repo: https://github.com/pre-commit/mirrors-phpstan
+    rev: 1.11.3
+    hooks:
+      - id: phpstan
+        name: PHPStan Static Analysis
+        entry: phpstan
+        args: ['analyse', '--configuration=phpstan.neon']
+        language: system
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.20.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]

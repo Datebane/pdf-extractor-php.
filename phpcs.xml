@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="PDF Extractor Project">
+    <description>PHP CodeSniffer rules for PDF Extractor</description>
+
+    <file>src</file>
+    <file>tests</file>
+
+    <rule ref="PSR12"/>
+
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>data/*</exclude-pattern>
+</ruleset>
